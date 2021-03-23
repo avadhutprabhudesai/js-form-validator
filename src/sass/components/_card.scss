@@ -1,0 +1,16 @@
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: $gutter-sm;
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: $gutter-md;
+  color: $font-color-bright;
+  transition: all 0.8s;
+  backface-visibility: hidden;
+}

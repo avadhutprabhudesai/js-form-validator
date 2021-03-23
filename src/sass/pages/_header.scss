@@ -1,0 +1,104 @@
+.header {
+  display: grid;
+  grid-gap: $gutter-sm;
+  grid-template-columns: 1.75fr 1fr;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+
+  &__banner {
+    display: grid;
+    min-height: 70vh;
+    grid-gap: $gutter-lg;
+    grid-template-columns: 100%;
+    place-content: center;
+    justify-items: start;
+    padding-left: 10rem;
+
+    background: url('assets/banner-bg.png') no-repeat center;
+    background-size: cover;
+
+    @media (max-width: $breakpoint-md) {
+      justify-items: center;
+      text-align: center;
+      padding-left: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-text;
+    color: $color-white;
+    font-weight: 700;
+
+    &::after {
+      display: inline-block;
+      content: '';
+      width: 70%;
+      height: 0.3rem;
+      margin-top: 2rem;
+      background-color: $color-casablanca;
+    }
+  }
+  &__title {
+    font-size: $font-size-brand;
+    font-weight: 300;
+    color: $color-white;
+  }
+  &__campaign {
+    display: grid;
+    grid-gap: $gutter-md;
+    place-content: center;
+    justify-items: center;
+    text-align: center;
+    min-height: 70vh;
+    padding: 5rem;
+    background-color: $color-casablanca;
+    color: $color-white;
+
+    @media (max-width: $breakpoint-sm) {
+      padding: 2rem;
+    }
+  }
+  &__name {
+    display: grid;
+    grid-gap: $gutter-xs;
+  }
+  &__template-name {
+    font-size: $font-size-heading;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__tag-line {
+    font-size: $font-size-content-highlight;
+    text-transform: uppercase;
+  }
+  &__separator {
+    width: 100%;
+    height: 5px;
+    background-color: $color-white;
+  }
+  &__quotes {
+    font-size: $font-size-content-highlight;
+    line-height: 2.2rem;
+    font-style: italic;
+  }
+  &__social-icons {
+    width: 100%;
+    display: grid;
+    grid-gap: $gutter-xs;
+    grid-template-columns: repeat(auto-fit, 4rem);
+    justify-content: center;
+    justify-items: center;
+  }
+  &__icon {
+    background-color: $color-white;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    color: $color-casablanca;
+    display: grid;
+    place-items: center;
+  }
+}
