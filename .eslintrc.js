@@ -20,5 +20,6 @@ module.exports = {
     '@babel/no-invalid-this': 'error',
     '@babel/no-unused-expressions': 'error',
     '@babel/semi': 'error',
+    'unicorn/no-array-for-each': 'off',
   },
 };

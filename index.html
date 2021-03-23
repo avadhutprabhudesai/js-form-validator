@@ -14,5 +14,56 @@
     ></script>
     <title>Form Validator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2 class="heading">Register With Us</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            autocomplete="off"
+            class="input"
+            type="text"
+            id="username"
+            placeholder="Enter username"
+          />
+          <small class="error-message">Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            autocomplete="off"
+            class="input"
+            type="text"
+            id="email"
+            placeholder="Enter email"
+          />
+          <small class="error-message">Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            autocomplete="off"
+            class="input"
+            type="password"
+            id="password"
+            placeholder="Enter password"
+          />
+          <small class="error-message">Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            autocomplete="off"
+            class="input"
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small class="error-message">Error message</small>
+        </div>
+        <input type="submit" class="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>
